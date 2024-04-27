@@ -28,16 +28,16 @@ class Car {
   const car1 = new Car("Toyota", "Camry", 2020, true);
   const car2 = new Car("Honda", "Accord", 2019, false);
   
-  car1.toggleAvailability(); // Now car1 is not available
-  console.log(car1.isAvailable); // Output: false
+  car1.toggleAvailability(); 
+  console.log(car1.isAvailable); 
   
-  car2.toggleAvailability(); // Now car2 is available
-  console.log(car2.isAvailable); // Output: true
+  car2.toggleAvailability(); 
+  console.log(car2.isAvailable);
 
   
 
 //   Create a Rental class or function constructor that has the following properties: ● car (Car object): The car that has been rented. 
-// ● renterName (string): The name of the person who rented the car. ● rentalStartDate (Date object): The start date of the rental period. ● rentalEndDate (Date object): The end date of the rental period. 
+// renterName (string): The name of the person who rented the car. ● rentalStartDate (Date object): The start date of the rental period. ● rentalEndDate (Date object): The end date of the rental period. 
 // The Rental class or function constructor should also have a method called calculateRentalDuration that returns the rental duration in days. 
 class Rental {
     constructor(car, renterName, rentalStartDate, rentalEndDate) {
@@ -57,7 +57,7 @@ class Rental {
   }
   
   const carx = new Car("Toyota", "Camry", 2020, true);
-  const cary = new Car("Honda", "Accord", 2019, false);
+  const cary = new Car("Hilux", "Accord", 2019, false);
 
   
   const rental1 = new Rental(carx, "Racheal Aber", new Date("2024-04-01"), new Date("2024-04-05"));
@@ -75,7 +75,7 @@ console.log(rental2.calculateRentalDuration());
 // Then, create an instance of the Rental class or function constructor for a rental involving the car you created. 
 // Finally, calculate the rental duration using the calculateRentalDuration method.
 const car = new Car("Toyota", "Camry", 2020, true);
-const rental = new Rental(car, "John Smith", new Date("2024-04-20"), new Date("2024-04-25"));
+const rental = new Rental(car, "Nehe RayChoz", new Date("2024-04-20"), new Date("2024-04-25"));
 const rentalDuration = rental.calculateRentalDuration();
 console.log("Rental Duration:", rentalDuration, "days");
 
@@ -103,13 +103,13 @@ class Question {
 
   
   const question1 = new Question(
-    "What is the capital of France?",
-    ["London", "Paris", "Berlin", "Rome"],
-    "Paris"
+    "What is the capital of Uganda?",
+    ["kigali", "Nairobi"],
+    "Kampala"
   );
   
  
-  const userAnswer = "Paris";
+  const userAnswer = "Kampala";
   console.log(question1.checkAnswer(userAnswer)); 
   
   
